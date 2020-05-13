@@ -11,7 +11,7 @@
   z-index: -1;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .content {
@@ -38,6 +38,10 @@
   list-style: none;
   display: flex;
   justify-content: center;
+}
+
+.nav li + li {
+  margin-left: 1em;
 }
 
 @media screen and (min-width: 32em) {

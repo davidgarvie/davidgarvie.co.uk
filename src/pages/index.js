@@ -12,17 +12,14 @@ export default function Home(props) {
         <p>{content}</p>
         <nav className={styles.nav}>
           <ul>
-            {/* <li>Portfolio</li>
-            <li>Services</li>
-            <li>About me</li> */}
             <li><Link to="/blog" className="animate-underline">Blog</Link></li>
-            {/* <li>Contact</li> */}
+            <li><Link to="/contact" className="animate-underline">Contact</Link></li>
           </ul>
         </nav>
       </div>
       <Img fluid={backgroundImage.fluid} style={{
         left: 0,
-        minHeight: '100vh',
+        height: '100vh',
         position: 'absolute',
         top: 0,
         width: '100%',
