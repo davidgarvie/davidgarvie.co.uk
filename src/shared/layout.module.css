@@ -1,0 +1,13 @@
+.container {
+  min-height: 100vh;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 32em;
+  padding: 0 1em;
+}
+
+.container > nav {
+  margin-top: 2em;
+}
