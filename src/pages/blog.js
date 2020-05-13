@@ -1,11 +1,12 @@
 import React from "react"
 import { graphql, Link } from 'gatsby'
 import { format } from 'date-fns'
+import Layout from '../shared/layout';
 
 export default function Blog(props) {
   const data = props.data.allContentfulBlogPost.nodes;
   return (
-    <main className="container">
+    <Layout>
       <h1>David's Blog</h1>
       <ul className="list">
         {data.map(post => (
@@ -17,7 +18,7 @@ export default function Blog(props) {
           </li>
         ))}
       </ul>
-    </main>
+    </Layout>
   )
 }
 
