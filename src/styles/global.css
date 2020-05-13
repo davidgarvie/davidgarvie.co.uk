@@ -3,15 +3,24 @@
 }
 
 html {
+  /* Taken from tailwinds pallette  */
+  --white: #fff;
+  --black: #000;
+  --g100: #F7FAFC;
+  --g900: #1A202C;
+  --t700: #2C7A7B;
+  --font-primary: var(--g900);
+  --primary: var(--t700);
+
   box-sizing: border-box;
-  color: #1A202C;
+  color: var(--font-primary);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 1em;
   line-height: 1.5;
 }
 
 body {
-  background: #F7FAFC;
+  background: var(--g100);
   margin: 0;
 }
 
@@ -19,14 +28,22 @@ img {
   width: 100%;
 }
 
+h1, h2, h3, p {
+  color: var(--font-primary);
+}
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .list {
   list-style: none;
   padding: 0;
-}
-
-.container {
-  max-width: 32em;
-  margin: 0 auto;
 }
 
 .animate-underline {
@@ -41,10 +58,14 @@ img {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #fff;
+  background-color: var(--font-primary);
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
+}
+
+.animate-underline:hover {
+  text-decoration: none;
 }
 
 .animate-underline:hover:before {
