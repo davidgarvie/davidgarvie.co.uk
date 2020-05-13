@@ -1,0 +1,23 @@
+.links {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  font-size: 3em;
+  margin: 0;
+}
+
+.links li {
+  display: inline-block;
+}
+
+.links svg {
+  padding: 10px;
+}
+
+.links path {
+  fill: var(--g900);
+}
+
+.linkedin path {
+  fill: #0072b1;
+}
