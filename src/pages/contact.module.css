@@ -1,13 +1,10 @@
-.contact {
-  max-width: 32em;
-  margin: 0 auto;
-  padding: 0 1em;
-  text-align: center;
+.form > * {
+  margin-bottom: 0.5em;
 }
 
-.form > * {
-  text-align: left;
-  margin-bottom: 0.5em;
+.heading,
+.subHeading {
+  text-align: center;
 }
 
 .form label {
@@ -25,32 +22,10 @@
 }
 
 .form button {
-  background: #285E61;
-  color: #fff;
-  text-align: center;
+  background: var(--primary);
+  color: var(--g100);
 }
 
 .form textarea {
   min-height: 100px;
-}
-
-.links {
-  list-style: none;
-  padding: 0;
-}
-
-.links li {
-  display: inline-block;
-}
-
-.links li + li {
-  margin-left: 1em;
-}
-
-.links path {
-  fill: #000;
-}
-
-.linkedin path {
-  fill: #0072b1;
 }
