@@ -2,6 +2,7 @@ import React from "react"
 import { graphql, Link } from 'gatsby'
 import Img from "gatsby-image"
 import styles from './index.module.css'
+import Nav from '../shared/nav';
 
 export default function Home(props) {
   const { backgroundImage, content, title } = props.data.allContentfulHomePage.nodes[0];
@@ -10,12 +11,7 @@ export default function Home(props) {
       <div className={styles.content}>
         <h1>{title}</h1>
         <p>{content}</p>
-        <nav className={styles.nav}>
-          <ul>
-            <li><Link to="/blog" className="animate-underline">Blog</Link></li>
-            <li><Link to="/contact" className="animate-underline">Contact</Link></li>
-          </ul>
-        </nav>
+        <Nav />
       </div>
       <Img fluid={backgroundImage.fluid} style={{
         left: 0,

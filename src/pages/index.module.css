@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  color: #F7FAFC;
+  --font-primary: var(--g100);
 }
 
 .container:after {
@@ -25,23 +25,6 @@
 
 .content h1, .content nav {
   margin-top: auto
-}
-
-.container a,
-.container a:visited,
-.container a:hover {
-  color: inherit
-}
-
-.nav ul {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.nav li + li {
-  margin-left: 1em;
 }
 
 @media screen and (min-width: 32em) {
