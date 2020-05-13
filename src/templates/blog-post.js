@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { formatDistance } from 'date-fns'
 
 function postTransformer(data) {
-  const { contentfulPost : { content, title, updatedAt } } = data;
+  const { contentfulBlogPost : { content, title, updatedAt } } = data;
   const { html, timeToRead } = content.childMarkdownRemark;
 
   return {
@@ -29,10 +29,9 @@ export default function BlogPost({ data }) {
   )
 }
 
-
 export const query = graphql`
-  query GetPost($slug: String) {
-    contentfulPost(slug: {eq: $slug }) {
+  query GetBlogPost($slug: String) {
+    contentfulBlogPost(slug: {eq: $slug }) {
       content {
         childMarkdownRemark {
           html
