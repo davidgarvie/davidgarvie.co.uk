@@ -5,7 +5,7 @@ import { format } from 'date-fns'
 export default function Home(props) {
   const data = props.data.allContentfulPost.nodes;
   return (
-    <main>
+    <main className="container">
       <h1>David's Blog</h1>
       <ul className="list">
         {data.map(post => (
