@@ -1,0 +1,30 @@
+.nav {
+  position: sticky;
+}
+
+.nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav li + li {
+  margin-left: 1em;
+}
+
+.nav .active {
+  color: var(--primary);
+}
+
+.nav a {
+  color: var(--font-primary);
+}
+
+
+
+@media screen and (min-width: 32em) {
+  .nav {
+    font-size: 2rem;
+  }
+}
