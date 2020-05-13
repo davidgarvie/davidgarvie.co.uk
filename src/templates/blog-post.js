@@ -1,6 +1,8 @@
 import React from "react"
 import { graphql } from 'gatsby'
 import { formatDistance } from 'date-fns'
+import Layout from '../shared/layout';
+import styles from './blog-post.module.css';
 
 function postTransformer(data) {
   const { contentfulBlogPost : { content, title, updatedAt } } = data;
@@ -17,15 +19,15 @@ function postTransformer(data) {
 export default function BlogPost({ data }) {
   const { date, html, timeToRead, title } = postTransformer(data);
   return (
-    <main className="container">
-      <h1>{title}</h1>
+    <Layout>
+      <h1 className={styles.heading}>{title}</h1>
       <p>Last updated {date} ago · <span>{timeToRead}</span> minutes to read.</p>
-      <article 
+      <article className={styles.article}
         dangerouslySetInnerHTML={{
           __html: html
         }}
       />
-    </main>
+    </Layout>
   )
 }
 
