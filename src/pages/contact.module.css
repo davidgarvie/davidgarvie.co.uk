@@ -1,0 +1,56 @@
+.contact {
+  max-width: 32em;
+  margin: 0 auto;
+  padding: 0 1em;
+  text-align: center;
+}
+
+.form > * {
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+.form label {
+  display: block;
+}
+
+.form input,
+.form textarea,
+.form button {
+  width: 100%;
+  padding: 0.4em 0.8em;
+  font-size: inherit;
+  border: 1px solid #718096;
+  border-radius: 4px;
+}
+
+.form button {
+  background: #285E61;
+  color: #fff;
+  text-align: center;
+}
+
+.form textarea {
+  min-height: 100px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.links li {
+  display: inline-block;
+}
+
+.links li + li {
+  margin-left: 1em;
+}
+
+.links path {
+  fill: #000;
+}
+
+.linkedin path {
+  fill: #0072b1;
+}
